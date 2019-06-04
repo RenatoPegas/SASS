@@ -1,5 +1,20 @@
+
+// Variables
 $standard-color: #c34d4a;
-$bg-color: #1e2c35;
+$bg-color: #1e2c35; 
+$white-color: #fff;
+
+// mixinsstop
+@mixin border-radius($radius: .3em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin standard-shadow {
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
 
 /** Geral **/
 body {
@@ -59,7 +74,7 @@ header .container {
 }
 
 .menu-opcoes a {
-  color: white;
+  color: $white-color;
   text-decoration: none;
 }
 
@@ -72,7 +87,7 @@ header .container {
   background: url(../imagens/destaque.jpg) center bottom repeat-x;
   -webkit-background-size: cover;
   background-size: cover;
-  color: white;
+  color: $white-color;
   height: 330px;
   padding-top: 10em;
 }
@@ -98,9 +113,8 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include border-radius(50px);
+  @include standard-shadow;
   font-weight: bold;
 }
 
@@ -166,11 +180,11 @@ header .container {
 }
 
 .planos h2 {
-  color: #fff;
+  color: $white-color;
 }
 
 .plano {
-  background: white;
+  background: $white-color;
   width: 18em;
   display: inline-block;
   margin: 1em 0 0 1.4em;
@@ -182,7 +196,7 @@ header .container {
 }
 
 .plano h3 {
-  color: #fff;
+  color: $white-color;
   font-size: 1.8em;
   background: $standard-color;
   text-align: center;
@@ -220,13 +234,12 @@ header .container {
 .plano button {
   background: $standard-color;
   border: 0;
-  color: #fff;
+  color: $white-color;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include border-radius();
+  @include standard-shadow;
   margin-left: 2em;
 }
 
@@ -309,8 +322,7 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  @include border-radius();
   border: 2px solid #ccc;
 }
 
@@ -318,13 +330,12 @@ textarea {
   margin: 0 auto;
   background: $standard-color;
   border: 0;
-  color: #fff;
+  color: $white-color;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include border-radius();
+  @include standard-shadow;
 }
 
 /** Footer **/
@@ -392,7 +403,7 @@ footer .container img {
 }
 
 footer a {
-  color: #fff;
+  color: $white-color;
   text-decoration: none;
 }
 

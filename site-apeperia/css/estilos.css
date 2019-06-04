@@ -46,7 +46,7 @@ header .container {
   width: 5em; }
 
 .menu-opcoes a {
-  color: white;
+  color: #fff;
   text-decoration: none; }
 
 .menu-opcoes a:hover {
@@ -57,7 +57,7 @@ header .container {
   background: url(../imagens/destaque.jpg) center bottom repeat-x;
   -webkit-background-size: cover;
   background-size: cover;
-  color: white;
+  color: #fff;
   height: 330px;
   padding-top: 10em; }
 
@@ -79,8 +79,10 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold; }
 
@@ -136,7 +138,7 @@ header .container {
   color: #fff; }
 
 .plano {
-  background: white;
+  background: #fff;
   width: 18em;
   display: inline-block;
   margin: 1em 0 0 1.4em;
@@ -183,7 +185,9 @@ header .container {
   height: 38px;
   font-size: 1.2em;
   -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
   border-radius: 0.3em;
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   margin-left: 2em; }
 
@@ -253,6 +257,7 @@ textarea {
   margin-bottom: .8em;
   padding: 4px 8px;
   -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
   border-radius: 0.3em;
   border: 2px solid #ccc; }
 
@@ -265,7 +270,9 @@ textarea {
   height: 38px;
   font-size: 1.2em;
   -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
   border-radius: 0.3em;
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3); }
 
 /** Footer **/
